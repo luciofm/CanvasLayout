@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GroupedEntriesGridLayout">
+        <attr name="spacing" format="dimension" />
+        <attr name="minColumns" format="integer" />
+        <attr name="maxColumns" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CanvasGridLayout">
+        <attr name="entrySpacing" format="dimension" />
+        <attr name="animateChanges" format="boolean" />
+    </declare-styleable>
+</resources>
