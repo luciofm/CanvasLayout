@@ -155,11 +155,11 @@ public class CanvasGridLayout extends ViewGroup {
             if (landscape) {
                 measureTwoChild(2, quarterWidth, quarterHeight, padw + mSpacing + quarterWidth,
                         padh,
-                        !landscape);
+                        false);
             } else {
                 measureTwoChild(2, quarterWidth, quarterHeight, padw,
                         padh + mSpacing + quarterHeight,
-                        !landscape);
+                        true);
             }
         } else if (viewCount == 5) {
             /* measure 5 children
@@ -189,16 +189,16 @@ public class CanvasGridLayout extends ViewGroup {
 
             if (landscape) {
                 measureTwoChild(1, eighthWidht, eighthHeight, padw, padh + quarterHeight + mSpacing,
-                        landscape);
+                        true);
                 measureTwoChild(3, quarterWidth, quarterHeight, padw + mSpacing + quarterWidth,
                         padh,
-                        !landscape);
+                        false);
             } else {
                 measureTwoChild(1, eighthWidht, eighthHeight, padw + quarterWidth + mSpacing, padh,
-                        landscape);
+                        false);
                 measureTwoChild(3, quarterWidth, quarterHeight, padw,
                         padh + mSpacing + quarterHeight,
-                        !landscape);
+                        true);
             }
         } else if (viewCount == 6) {
             /* measure 6 children
@@ -238,15 +238,15 @@ public class CanvasGridLayout extends ViewGroup {
 
             if (landscape) {
                 measureTwoChild(1, eighthWidht, eighthHeight, padw, padh + quarterHeight + mSpacing,
-                        landscape);
+                        true);
                 measureTwoChild(3, eighthWidht, eighthHeight, padw + halfWidth + mSpacing, padh,
-                        landscape);
+                        true);
 
             } else {
                 measureTwoChild(1, eighthWidht, eighthHeight, padw + quarterWidth + mSpacing, padh,
-                        landscape);
+                        false);
                 measureTwoChild(3, eighthWidht, eighthHeight, padw, padh + halfHeight + mSpacing,
-                        landscape);
+                        false);
             }
         }
 

@@ -10,4 +10,8 @@
         <attr name="entrySpacing" format="dimension" />
         <attr name="animateChanges" format="boolean" />
     </declare-styleable>
+
+    <declare-styleable name="TextureVideoView">
+        <attr name="scaleType" format="string"/>
+    </declare-styleable>
 </resources>
